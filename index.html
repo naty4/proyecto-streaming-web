@@ -1,73 +1,75 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Szeptream</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Szeptream</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
 <body>
 
-    <header>
-        <div class="container-navbar">
-            <div class="logo">
-                <span class="logo-text">N</span>
-            </div>
-            <nav class="navbar">
-                <ul class="nav-list">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Películas</a></li>
-                    <li><a href="#">Series</a></li>
-                </ul>
-            </nav>
-            <div class="buscador">
-                <input type="text" placeholder="Buscar...">
-            </div>
-            <div class="nav-buttons">
-                <button class="btn-login">Ingresar</button>
-                <button class="btn-suscripcion">Suscribirme</button>
-            </div>
+  <header>
+    <div class="container-navbar">
+      <div class="logo">
+        <span class="logo-text">N</span>
+      </div>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Películas</a></li>
+          <li><a href="#">Series</a></li>
+        </ul>
+      </nav>
+      <div class="buscador">
+        <input type="text" placeholder="Buscar...">
+      </div>
+      <div class="nav-buttons">
+        <button class="btn-login">Ingresar</button>
+        <button class="btn-suscripcion">Suscribirme</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="video-container">
+      <video src="assets/john-wick.mp4" type="video/mp4" autoplay loop muted></video>
+    </div>
+
+    <div class="planes-container">
+      <div class="col-plan">
+        <div class="titulo-plan">
+          <h2>Default</h2>
         </div>
-    </header>
+        <h1>0$/mes</h1>
+        <ul>
+          <li>Resolución SD [Estándar]</li>
+          <li>Anuncios</li>
+          <li>Acceso ilimitado a películas y series</li>
+        </ul>
+      </div>
 
-    <main>
-        <div class="video-container">
-            <video src="assets/john-wick.mp4" type="video/mp4" autoplay loop muted></video>
+      <div class="col-plan">
+        <div class="titulo-plan">
+          <h2>Premium</h2>
         </div>
+        <h1>0.99$/mes</h1>
+        <ul>
+          <li>Resolución [4K+HDR]</li>
+          <li>Sin anuncios</li>
+          <li>Acceso ilimitado a películas y series</li>
+        </ul>
+        <button class="btn-suscripcion">Suscribirme</button>
+      </div>
+    </div>
+    </div>
 
-        <div class="planes-container">
-            <div class="col-plan">
-                <div class="titulo-plan">
-                    <h2>Default</h2>
-                </div>
-                <h1>0$/mes</h1>
-                <ul>
-                    <li>Resolución SD [Estándar]</li>
-                    <li>Anuncios</li>
-                    <li>Acceso ilimitado a películas y series</li>
-                </ul>
-            </div>
+  </main>
 
-            <div class="col-plan">
-                <div class="titulo-plan">
-                    <h2>Premium</h2>
-                </div>
-                <h1>0.99$/mes</h1>
-                <ul>
-                    <li>Resolución [4K+HDR]</li>
-                    <li>Sin anuncios</li>
-                    <li>Acceso ilimitado a películas y series</li>
-                </ul>
-                <button class="btn-suscripcion">Suscribirme</button>
-            </div>
-        </div>
-        </div>
-
-    </main>
-
-    <footer>
-        <p> 2024 Mi Sitio de Streaming. </p>
-    </footer>
+  <footer>
+    <p> 2024 Mi Sitio de Streaming. </p>
+  </footer>
 </body>
 
 </html>
