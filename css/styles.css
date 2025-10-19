@@ -27,6 +27,8 @@ header {
     padding: 0.5rem 0;
     width: 100%;
     z-index: 100;
+    opacity: 0.9;
+
 }
 
 .container-navbar {
@@ -104,7 +106,6 @@ header {
     font-size: 1.5rem;
     transition: background-color 0.3s ease;
     border-radius: 20px;
-
 }
 
 .btn-login {
@@ -121,17 +122,17 @@ header {
 .btn-suscripcion {
     background-color: #FF0033;
     color: #FFE5E8;
+    box-shadow: 15px 10px 15px rgba(0, 0, 0, 10);
 }
 
 .btn-suscripcion:hover {
     background-color: #A50021;
 }
 
-/* --- Contenedor Principal --- */
+/* --- Contenedor Principal del Video--- */
 .video-container {
     width: 100%;
     margin: 0 auto;
-    /* Centrar el contenedor */
 }
 
 /* --- Video de Fondo --- */
@@ -160,11 +161,11 @@ video {
 .col-plan {
     display: flex;
     flex-direction: column;
+    width: auto;
+    height: 280px;
     margin: 40px;
     margin-top: 10px;
     padding: 2px;
-    width: auto;
-    height: 250px;
     border: 0px solid #ccc;
     text-align: center;
     background-color: #1A1A1A;
@@ -201,7 +202,7 @@ video {
 }
 
 .col-plan li {
-    padding: 5px;
+    padding: 10px;
     margin-block-start: 0em;
     margin-block-end: 0em;
     padding-inline-start: 0em;
