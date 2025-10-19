@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #1A1A1A;
+    background-color: #030303;
 
 }
 
@@ -19,10 +19,16 @@ body {
     font-family: Arial, sans-serif;
 }
 
+h2 {
+    margin: 0.5em;
+    color:#FFE5E8;
+    text-align: center;
+}
+
 header {
     position: sticky;
     top: 0px;
-    background-color: #000;
+    background-color: #000000;
     color: #fff;
     padding: 0.5rem 0;
     width: 100%;
@@ -115,18 +121,17 @@ header {
 }
 
 .btn-login:hover {
-    background-color: #fff;
+    background-color: #FF0033;
     color: #000;
 }
 
 .btn-suscripcion {
-    background-color: #FF0033;
-    color: #FFE5E8;
-    box-shadow: 15px 10px 15px rgba(0, 0, 0, 10);
+    background-color: #FFE5E8;
+    color: #000000;
 }
 
 .btn-suscripcion:hover {
-    background-color: #A50021;
+    background-color: #FF0033;
 }
 
 /* --- Contenedor Principal del Video--- */
@@ -162,14 +167,15 @@ video {
     display: flex;
     flex-direction: column;
     width: auto;
-    height: 280px;
+    height: auto;
     margin: 40px;
     margin-top: 10px;
     padding: 2px;
-    border: 0px solid #ccc;
+    border: 1px solid #1A1A1A;
     text-align: center;
-    background-color: #1A1A1A;
+    background-color: #000000;
     border-radius: 10px;
+    box-shadow: 0px 0px 20px #FF0033;
 }
 
 .titulo-plan {
@@ -178,7 +184,7 @@ video {
     width: 300px;
     height: 50px;
     border-radius: 10px;
-    box-shadow: 15px 10px 15px rgba(0, 0, 0, 10);
+    box-shadow: 0px 0px 10px #FFC107;
 }
 
 .titulo-plan h2 {
@@ -202,9 +208,10 @@ video {
 }
 
 .col-plan li {
+    margin: 1em;
     padding: 10px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
     padding-inline-start: 0em;
     list-style: none;
     color: white;
