@@ -19,13 +19,21 @@ body {
     font-family: Arial, sans-serif;
 }
 
-h2 {
-    margin: 0.5em;
+h1 {
+    margin: 0.7rem;
     color:#FFE5E8;
     text-align: center;
-    font-size: 3rem;
+    font-size: 2.5vw;
+    font-style: oblique;
     text-shadow: 0px 0px 15px #FF0033;
-    font-size: clamp(1.5rem, 15vw, 3rem);
+}
+
+h2 {
+    margin: 1em;
+    color:#FFE5E8;
+    text-align: center;
+    font-size: 1.3rem;
+    /* text-shadow: 0px 0px 15px #FF0033; */
 }
 
 h3 {
@@ -136,16 +144,17 @@ header {
 
 .btn-login:hover {
     background-color: #A50021;
-    color: #000;
+    color: #ffffff;
 }
 
 .btn-suscripcion {
-    background-color: #FFE5E8;
-    color: #000000;
+    background-color: #A50021;
+    color: #ffffff;
+    border: 1px solid #A50021;
 }
 
 .btn-suscripcion:hover {
-    background-color: #A50021;
+    background-color: #66081b;
 }
 
 /* --- Contenedor Principal del Video--- */
@@ -177,6 +186,7 @@ video {
     background-color: #000000;
 }
 
+/* Columnas de cada plan */
 .col-plan {
     display: flex;
     flex-direction: column;
@@ -185,7 +195,7 @@ video {
     margin: 40px;
     margin-top: 10px;
     padding: 2px;
-    border: 1px solid #1A1A1A;
+    border: 0px solid #FF0033;
     text-align: center;
     background-color: #000000;
     border-radius: 10px;
@@ -193,7 +203,6 @@ video {
 }
 
 .titulo-plan {
-    border: 1px solid #FF0033;
     background-color: #000000;
     width: auto;
     height: 50px;
@@ -247,7 +256,7 @@ video {
     width: 292px;
     height: auto;
     padding: 5px;
-    border: 1px solid #1A1A1A;
+    border: 1px solid #FF0033;
     text-align: center;
     background-color: #000000;
     border-radius: 10px;
@@ -264,16 +273,16 @@ img {
 .compatibilidad-container {
     display: flex;
     justify-content: center;
-    width: 1000px;
-    max-width: 800px;
+    width: 100%;
+    max-width: 100%;
     align-items: center;
-    margin: 40px;
 }
 
 .compatibilidad img {
-    width: 1000px;
-    max-width: 1800px;
+    width: 100%;
+    max-width: 100%;
     height: auto;
+    object-fit: cover;
     border-radius: 10px;
 }
 
@@ -307,10 +316,8 @@ img {
 
 }
 
-
+/* Estilos para tablets en modo vertical */
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
-
-    /* Estilos para tablets en modo vertical */
     .container-navbar {
         flex-direction: row;
         gap: 1rem;
@@ -356,7 +363,6 @@ img {
         gap: 0.5rem;
     }
 
-
     .video-container video {
         width: 100%;
         height: 100%;
@@ -369,9 +375,8 @@ img {
     }
 }
 
+/* Estilos para laptops y computadoras de escritorio */
 @media (min-width: 1280px) {
-
-    /* Estilos para laptops y computadoras de escritorio */
     .video-container {
         position: relative;
         width: 100%;
@@ -397,7 +402,6 @@ img {
     .nav-buttons {
         gap: 0.5rem;
     }
-
 
     .video-container video {
         width: 100%;
